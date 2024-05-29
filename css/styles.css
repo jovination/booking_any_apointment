@@ -6,6 +6,9 @@
   body{
     margin:0
   }
+  body::-webkit-scrollbar{
+    display: none;
+}
   article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
     display:block;
   }
@@ -332,8 +335,6 @@
     text-indent: 0;
     text-transform: inherit;
     text-shadow: none;
-    font-smoothing: auto;
-    vertical-align: baseline;
     cursor: inherit;
     white-space: inherit;
     word-break: normal;
@@ -1499,7 +1500,9 @@
     height: 100%;
     overflow: auto;
   }
-  
+  .backdrop::-webkit-scrollbar{
+    display: none;
+  }
   .w-lightbox-content {
     height: 100vh;
     position: relative;
